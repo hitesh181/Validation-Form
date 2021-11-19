@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Form Validation Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2 style= "text-align: center;">Employee Database Entry</h2>   
+        <form id="signup" class="form">
+            <h1>Sign Up</h1>
+            <div class="form-field error">
+                <label for="name">Username:</label>
+                <input type="text" name="name" id="name"  autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field error">
+                <label for="emp_id">Employee Id:</label>
+                <input type="number" name="emp_id" id="emp_id"autocomplete="off" >
+                <small></small>
+            </div>
+
+             <div class="form-field error">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field error gender">
+                <label id=gender>Gender-</label>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="male" value=female >
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="female" value=male>
+                
+                <label for="gender">Non-Binary</label>
+                <input type="radio" name="gender" id="nb" value=nb >
+
+                
+                <small></small>
+            </div>
+
+            <div class="form-field error">
+                <label for="dob">DOB:</label>
+                <input type="date" name="dob" id="dob" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field error">
+                <label for="designation">Designation:</label>
+                <input type="text" name="designation" id="designation" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field error">
+                <label for="salary">Salary:</label>
+                <input type="number" name="salary" id="salary" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <input type="submit" value="Sign Up">
+            </div>
+            <div class="form-field">
+                <input type="button" id=mybtn value="Show Employees">
+            </div>
+        </form>
+    </div>
+
+
+<section>
+<h2>Employee Database</h2>
+<div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+    <thead>
+        <tr>
+        </tr>
+    </thead>
+    </table>
+</div>  
+<div class="tbl-content">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+      <tr>  
+    </tr>
+</div>
+</section>
+    <script src="app.js"></script>
+</body>
+</html>
